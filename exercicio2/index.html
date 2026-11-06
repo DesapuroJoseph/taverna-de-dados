@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Taverna de Dados</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../exercicio1/img/icone.png">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header id="topo">
+        <div class="container cabecalho">
+            <p class="logo">Taverna de Dados</p>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../exercicio1/index.html">Início</a></li>
+                    <li><a href="../exercicio2/index.html">Cadastro</a></li>
+                    <li><a href="../exercicio3/index.html">Acervo</a></li>
+                    <li><a href="../exercicio4/index.html">Galeria</a></li>
+                    <li><a href="../exercicio5/index.html">Evento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- TÍTULO -->
+        <h1>Ficha do Aventureiro</h1>
+        <p>Preencha a ficha para entrar na lista de jogadores. Campos com * são obrigatórios.</p>
+
+        <!-- FORMULÁRIO -->
+        <form class="formulario">
+            <label for="nome">Nome completo *</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone *</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(31) 99999-9999" required>
+
+            <!-- OPÇÕES DE DISPONIBILIDADE DE HORÁRIO -->
+            <label for="horario">Horário preferido *</label>
+            <select id="horario" name="horario" required>
+                <option value="">Selecione</option>
+                <option value="sabado">Sábado à tarde</option>
+                <option value="quarta">Quarta à noite</option>
+                <option value="domingo">Domingo à tarde</option>
+            </select>
+
+            <!-- OPÇÕES DE EXPERIÊNCIA DO JOGADOR -->
+            <fieldset>
+                <legend>Experiência *</legend>
+                <label><input type="radio" name="experiencia" value="nunca" required> Nunca joguei</label>
+                <label><input type="radio" name="experiencia" value="iniciante"> Iniciante</label>
+                <label><input type="radio" name="experiencia" value="veterano"> Veterano</label>
+            </fieldset>
+
+            <!-- CHECKBOX DE JOGOS -->
+            <fieldset>
+                <legend>O que você quer jogar?</legend>
+                <label><input type="checkbox" name="interesses" value="rpg"> RPG de mesa</label>
+                <label><input type="checkbox" name="interesses" value="estrategia"> Estratégia</label>
+                <label><input type="checkbox" name="interesses" value="cooperativo"> Cooperativos</label>
+            </fieldset>
+
+            <label for="mensagem">Conte um pouco sobre você</label>
+            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+            <p class="aviso">Exercício escolar: os dados não são enviados nem gravados.</p>
+
+            <!-- ENVIAR OU LIMPAR -->
+            <div class="botoes">
+                <button type="submit">Enviar ficha</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p class="creditos">© 2026 Taverna de Dados – Projeto escolar de Desenvolvimento Web I</p>
+    </footer>
+
+</body>
+</html>

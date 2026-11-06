@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maratona da Taverna | Taverna de Dados</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../exercicio1/img/icone.png">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header id="topo">
+        <div class="container cabecalho">
+            <h1 class="logo">Maratona da Taverna 2026</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../exercicio1/index.html">Início</a></li>
+                    <li><a href="../exercicio2/index.html">Cadastro</a></li>
+                    <li><a href="../exercicio3/index.html">Acervo</a></li>
+                    <li><a href="../exercicio4/index.html">Galeria</a></li>
+                    <li><a href="../exercicio5/index.html">Evento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- NAVEGAÇÃO INTERNA -->
+        <nav class="menu-interno">
+            <a href="#sobre">Sobre</a>
+            <a href="#programacao">Programação</a>
+            <a href="#informacoes">Informações</a>
+            <a href="#inscricao">Inscrição</a>
+        </nav>
+
+        <!-- APRESENTAÇÃO (INFOMRAÇÕES) -->
+        <section id="sobre">
+            <h2>Sobre o evento</h2>
+            <p>Um dia inteiro de jogos de tabuleiro e RPG, aberto a quem já joga e a quem nunca jogou.</p>
+            <p><strong>Data:</strong> sábado, 28 de novembro de 2026, das 13h às 21h</p>
+            <p><strong>Local:</strong> Rua dos Aventureiros, 20 – Centro – Sete Lagoas/MG</p>
+        </section>
+
+        <!-- PROGRAMAÇÃO -->
+        <section id="programacao">
+            <h2>Programação</h2>
+            <div class="atividades">
+                <article class="atividade">
+                    <h3>13h30 – Oficina de regras</h3>
+                    <p>Responsável: Lívia Andrade</p>
+                </article>
+                <article class="atividade">
+                    <h3>15h00 – Torneio de Reinos da Lagoa</h3>
+                    <p>Responsável: Caio Ferreira</p>
+                </article>
+                <article class="atividade">
+                    <h3>17h00 – Mesas de RPG para iniciantes</h3>
+                    <p>Responsável: Júlia Prado</p>
+                </article>
+                <article class="atividade">
+                    <h3>20h00 – Premiação e sorteio</h3>
+                    <p>Responsável: organização</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- INFORMAÇÕES IMPORTANTES -->
+        <section id="informacoes">
+            <h2>Informações importantes</h2>
+            <ul>
+                <li>A entrada é gratuita, mas é preciso se inscrever.</li>
+                <li>Chegue 15 minutos antes da sua atividade.</li>
+                <li>Menores de 14 anos devem vir com um responsável.</li>
+                <li>Não é permitido comer nas mesas de jogo.</li>
+            </ul>
+        </section>
+
+        <!-- ORIENTAÇÕES E FORMULÁRIO DE INSCRIÇÃO -->
+        <section id="inscricao">
+            <h2>Inscrição</h2>
+            <ol>
+                <li>Preencha o formulário abaixo.</li>
+                <li>Escolha a atividade principal.</li>
+                <li>No dia, informe seu nome na recepção.</li>
+            </ol>
+
+            <form class="formulario">
+                <label for="nome">Nome *</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="atividade">Atividade principal *</label>
+                <select id="atividade" name="atividade" required>
+                    <option value="">Selecione</option>
+                    <option value="oficina">Oficina de regras</option>
+                    <option value="torneio">Torneio de Reinos da Lagoa</option>
+                    <option value="rpg">Mesas de RPG</option>
+                </select>
+
+                <p class="aviso">O formulário só é validado pelo navegador. Nada é enviado nem gravado.</p>
+                <button type="submit">Inscrever</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p class="creditos">© 2026 Taverna de Dados – Projeto escolar de Desenvolvimento Web I</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+:root {
+    --feltro: #1f4d3a;
+    --madeira: #4a2e1d;
+    --pergaminho: #f3ead6;
+    --ouro: #c9962b;
+    --tinta: #2b2118;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Alegreya Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--tinta);
+    background-color: var(--pergaminho);
+}
+
+h1, h2, h3 {
+    font-family: "Alegreya SC", Georgia, serif;
+    color: var(--feltro);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#topo {
+    background-color: var(--feltro);
+    border-bottom: 6px solid var(--ouro);
+    padding: 16px 0;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--ouro);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    display: block;
+    padding: 8px 14px;
+    color: var(--pergaminho);
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 6px;
+}
+
+.menu a:hover,
+.menu a:focus {
+    border-color: var(--ouro);
+    color: var(--ouro);
+}
+
+.creditos {
+    margin: 40px 0 0;
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--pergaminho);
+    background-color: var(--madeira);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Links para as seções da página */
+.menu-interno {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 20px;
+}
+
+.menu-interno a {
+    color: var(--madeira);
+    font-weight: bold;
+}
+
+.menu-interno a:hover {
+    color: var(--ouro);
+}
+
+section {
+    padding: 20px 0;
+    border-bottom: 2px dashed var(--madeira);
+}
+
+.atividades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.atividade {
+    padding: 16px;
+    background-color: white;
+    border-left: 6px solid var(--ouro);
+    border-radius: 6px;
+}
+
+.atividade h3 {
+    margin: 0;
+}
+
+.atividade p {
+    margin: 4px 0 0;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 500px;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid var(--madeira);
+    border-radius: 6px;
+}
+
+input:focus, select:focus {
+    outline: 3px solid var(--ouro);
+}
+
+.aviso {
+    font-size: 0.9rem;
+}
+
+button {
+    align-self: flex-start;
+    padding: 10px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--pergaminho);
+    background-color: var(--feltro);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--ouro);
+}
+
+@media (max-width: 700px) {
+    .atividades {
+        grid-template-columns: 1fr;
+    }
+}

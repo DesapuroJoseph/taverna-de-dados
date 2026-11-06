@@ -1,0 +1,224 @@
+:root {
+    --feltro: #1f4d3a;
+    --madeira: #4a2e1d;
+    --pergaminho: #f3ead6;
+    --ouro: #c9962b;
+    --tinta: #2b2118;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Alegreya Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--tinta);
+    background-color: var(--pergaminho);
+}
+
+h1, h2, h3 {
+    font-family: "Alegreya SC", Georgia, serif;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.secao {
+    padding: 60px 0;
+}
+
+
+#topo {
+    background-color: var(--feltro);
+    border-bottom: 6px solid var(--ouro);
+    padding: 16px 0;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--ouro);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    display: block;
+    padding: 8px 14px;
+    color: var(--pergaminho);
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 6px;
+}
+
+.menu a:hover,
+.menu a:focus {
+    border-color: var(--ouro);
+    color: var(--ouro);
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.texto {
+    flex: 1;
+}
+
+.imagem-destaque {
+    flex: 1;
+    max-width: 420px;
+    border: 4px solid var(--madeira);
+    border-radius: 14px;
+}
+
+.etiqueta {
+    display: inline-block;
+    margin: 0 0 8px;
+    padding: 4px 10px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--pergaminho);
+    background-color: var(--madeira);
+    border-radius: 4px;
+}
+
+.secao-escura {
+    background-color: var(--madeira);
+    color: var(--pergaminho);
+}
+
+.secao-escura h2 {
+    color: var(--ouro);
+}
+
+.lista-servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.servico {
+    background-color: var(--pergaminho);
+    color: var(--tinta);
+    padding: 24px;
+    border: 3px solid var(--ouro);
+    border-radius: 10px;
+}
+
+.servico h3 {
+    margin: 12px 0 8px;
+    color: var(--feltro);
+}
+
+.servico p {
+    margin: 0;
+}
+
+.dado {
+    display: inline-block;
+    padding: 4px 10px;
+    font-weight: bold;
+    color: var(--pergaminho);
+    background-color: var(--feltro);
+    border-radius: 6px;
+}
+
+#contato {
+    background-color: var(--feltro);
+    color: var(--pergaminho);
+    padding-top: 40px;
+}
+
+#contato h2 {
+    color: var(--ouro);
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rodape p {
+    margin: 4px 0;
+}
+
+.aviso {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.voltar {
+    color: var(--ouro);
+    font-weight: bold;
+}
+
+.creditos {
+    margin: 30px 0 0;
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    background-color: var(--madeira);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 700px) {
+    .apresentacao {
+        flex-direction: column;
+    }
+
+    .lista-servicos {
+        grid-template-columns: 1fr;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+}

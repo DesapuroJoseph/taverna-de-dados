@@ -1,0 +1,130 @@
+:root {
+    --feltro: #1f4d3a;
+    --madeira: #4a2e1d;
+    --pergaminho: #f3ead6;
+    --ouro: #c9962b;
+    --tinta: #2b2118;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Alegreya Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--tinta);
+    background-color: var(--pergaminho);
+    position: relative;
+    min-height: 100vh; 
+    padding-bottom: 80px;
+}
+
+h1, h2, h3 {
+    font-family: "Alegreya SC", Georgia, serif;
+    color: var(--feltro);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#topo {
+    background-color: var(--feltro);
+    border-bottom: 6px solid var(--ouro);
+    padding: 16px 0;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.8rem;
+    font-family: "Alegreya SC", Georgia, serif;
+    color: var(--ouro);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    display: block;
+    padding: 8px 14px;
+    color: var(--pergaminho);
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 6px;
+}
+
+.menu a:hover,
+.menu a:focus {
+    border-color: var(--ouro);
+    color: var(--ouro);
+}
+
+/* Rodapé */
+.creditos {
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--pergaminho);
+    background-color: var(--madeira);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.legenda {
+    font-weight: bold;
+    color: var(--madeira);
+}
+
+.rolagem {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+caption {
+    padding: 10px;
+    font-weight: bold;
+    color: var(--pergaminho);
+    background-color: var(--madeira);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid var(--madeira);
+}
+
+th {
+    color: var(--ouro);
+    background-color: var(--feltro);
+}
+
+tbody tr:hover {
+    background-color: #ead9a8;
+}
